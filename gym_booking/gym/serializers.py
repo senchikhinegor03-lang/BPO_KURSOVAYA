@@ -7,6 +7,7 @@ class TrainerSerializer(serializers.ModelSerializer):
     """Serializer for Trainer model with unique email validation."""
 
     class Meta:
+        #отсуствует валидация телефона и почты
         model = Trainer
         fields = [
             'id', 'first_name', 'last_name', 'email',
