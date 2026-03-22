@@ -32,7 +32,7 @@ class Session(models.Model):
     title = models.CharField(max_length=100)
     description = models.TextField(blank=True)
     trainer = models.ForeignKey(Trainer, on_delete=models.PROTECT, related_name='sessions')
-    date = models.DateField()
+    date = models.DateField() #Неполная валидация даты и времени
     start_time = models.TimeField()
     end_time = models.TimeField()
     capacity = models.PositiveIntegerField()
