@@ -50,7 +50,7 @@ class SessionSerializer(serializers.ModelSerializer):
 
 class BookingSerializer(serializers.ModelSerializer):
     """Serializer for Booking model with nested user and session objects."""
-
+#Отсутствие валидации лимита вместимости при создании бронирования
     user = UserSummarySerializer(read_only=True)
     session = SessionSerializer(read_only=True)
 
