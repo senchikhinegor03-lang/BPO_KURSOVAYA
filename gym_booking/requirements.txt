@@ -1,0 +1,6 @@
+Django==5.2.6
+djangorestframework==3.16.1
+djangorestframework_simplejwt==5.5.1
+hypothesis[django]==6.135.26
+pytest==8.4.1
+pytest-django==4.11.1
