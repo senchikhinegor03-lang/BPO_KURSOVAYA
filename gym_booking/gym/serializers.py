@@ -29,7 +29,7 @@ class SessionSerializer(serializers.ModelSerializer):
     """Serializer for Session model with nested trainer info and computed fields."""
 
     trainer_name = serializers.SerializerMethodField(read_only=True)
-    available_spots = serializers.SerializerMethodField(read_only=True)
+    available_spots = serializers.SerializerMethodField(read_only=True) #Нет проверки на отрицательные значения available_spots
 
     class Meta:
         model = Session
